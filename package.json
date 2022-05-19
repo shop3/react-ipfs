@@ -1,6 +1,6 @@
 {
   "name": "@shop3/react-ipfs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React ipfs provider",
   "license": "MIT",
   "main": "lib/index.js",
