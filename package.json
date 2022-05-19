@@ -1,0 +1,59 @@
+{
+  "name": "@shop3/react-ipfs",
+  "version": "0.0.0",
+  "description": "React ipfs provider",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "develop": "webpack serve --config ./dev/webpack.config.js",
+    "release": "standard-version",
+    "lint": "eslint --fix .",
+    "lint:staged": "eslint --fix",
+    "husky:install": "husky install",
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint --edit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "ipfs-core": "^0.14.3",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.17",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "html-webpack-plugin": "^4.5.2",
+    "husky": "^7.0.4",
+    "ipfs-core": "^0.14.3",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "standard-version": "^9.3.2",
+    "ts-loader": "^8.3.0",
+    "typescript": "^4.6.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.(ts|tsx|js)": [
+      "npm run lint:staged"
+    ]
+  }
+}
