@@ -20,7 +20,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "ipfs-core": "^0.14.3",
+    "ipfs-core": "^0.17.0",
     "react": "^17.0.2"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "eslint-plugin-react": "^7.29.4",
     "html-webpack-plugin": "^4.5.2",
     "husky": "^7.0.4",
-    "ipfs-core": "^0.14.3",
+    "ipfs-core": "^0.17.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "react": "^17.0.2",
